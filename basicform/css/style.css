@@ -6,15 +6,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .form-container{
-    display: flex;
     flex-direction: column;
     width: 280px; /*nem ér a sor végeig */
     border: 2px solid #3498db;  /* Szép stabil kék keret*/
     border-radius: 6px; /* modern enyhén lekerekített sarkok*/
     padding: 10px; /* Belül kényelmesebb a szövegnek*/
     margin-bottom: 15px; /*Távolság a mezők között */
-    display: block; /* Szépen egymás alaá kerülnek*/
-    
 }
 .flabel{
     display: block; /*lelöki a választót  akövi sorba*/
