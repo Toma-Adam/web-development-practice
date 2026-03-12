@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    color: red;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 280px; /*nem ér a sor végeig */
+    border: 2px solid #3498db;  /* Szép stabil kék keret*/
+    border-radius: 6px; /* modern enyhén lekerekített sarkok*/
+    padding: 10px; /* Belül kényelmesebb a szövegnek*/
+    margin-bottom: 15px; /*Távolság a mezők között */
+    display: block; /* Szépen egymás alaá kerülnek*/
+    
+}
+.flabel{
+    display: block; /*lelöki a választót  akövi sorba*/
+    margin-bottom: 8px;/*Egy kis hely a felirat és a doboz között*/
+    font-weight: bold;/*legyen kicsit vastagabb olvashatóbb*/
+    color: #333;
+    font-family: sans-serif;
+    
+   
+}
+.modern-menu{
+    width: auto; /*Nem lesz feleslegesen nagy a keret*/
+    min-width: 200px; /*tisztességes alap keret*/
+    max-width: 300px; /*nem lesz szélesebb 300 pixelnél*/
+    padding: 10px 15px; /*Belül szellős lesz, nem ragad a szöveg széléhez*/
+    border: 2px solid #3498db; /*szép kék keret mint az Inputoknál*/
+    border-radius: 8px; /*Modern kerekítés*/
+    background-color: white; /*Tiszta fehér hattér*/
+    font-size: 18px; /*Olvasható betűméret*/
+    cursor: pointer; /*Egérkurzor kézzé változik felette*/
+    outline: none; /*csúnya alapkeret eltüntetése*/
+    display: block;
+    
+    
+
+}
+.modern-menu:focus{
+    border-color: #2ecc71; /*átvált zöldre jelezve itt dolgozol*/
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /*finom ragyogás*/
+}
+.form-select{
+    background-color: white;  
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 400PX;
+    
+
+}
+
+
+.in{
+    margin-bottom: 50px;/*térköz alatta*/
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Üdvözöllek az oldalamon!</h1>
+    <p>Gyakoroljunk kicsit </p>
+
+    
+
+    <form action="/mentes" method="POST" class="form-container"> <!---- action/method Java program címe POST biztonságos -->
+        <label for="email_id">Email cím:</label> <!--id és a for muszáj hogy ugyan az legyen-->
+        <input type="email" id="email_id" name="u_email" placeholder="pelda@email.com"> <!--Placeholder halvány segítő szöveg-->
+        <label for="pass_id">Jelszó</label>
+        <input type="password" id="pass_id" name="u_pass"> <!--"name" kell a Javanak ezt keresi-->
+        <p>fizetési mód</p>
+        <input type="radio" id="r1" name="pay" value="cash">
+        <label for="r1">Készpénz</label>
+        <input type="radio" id="r2" name="pay" value="Card"> <!--ugya az a "pay" név kell mert különben kilehet többet is jelölni-->
+        <label for="r2">Kártya</label>
+        <input type="submit" value="regisztrációt"> <!--value az üzenet amit a gombküld a Javanak ha rákattintok.-->
+        
+
+
+    </form> 
+
+    <form class="form-select" action="/valasztas" method="POST" >
+        <label class="flabel" for="terulet-valaszto" >válassz egy területet</label>
+        <select name="terulet" id="terulet-valaszto" class="modern-menu">
+            <option value="" selected disabled>Terület</option><!--ez jelenik meg elsőnek de nem lehet rákattintani és eltűnik-->
+            <option value="huto">Hűtő</option> <!-- Option lehetőség, Value eztkeresi a Java-->
+            <option value="szaraz">Meki</option>
+            <option value="fagyo">Fagyó</option>
+            <option value="tak">Takarítás</option>         
+        </select>
+       <input class="in" type="submit" value="Mentés" >
+    </form>
+
+<form class="form-container" action="/t" method="POST">
+    <label for="kod_id">Dolgozó</label>
+    <input type="text" id="kod_id" name="u_name" placeholder="ATA">
+    <label for="jel_id">Jelszó</label>
+    <input type="password" name="u_jel">
+    <label for="ter">Válassz területet</label>
+    <select name="ter" id="ter" class="modern-menu">
+        <option value="" selected disabled>Válássz</option>
+        <option value="huti">Hűtő</option>
+        <option value="szarz">Meki</option>
+        <option value="fagy">Fagyó</option>
+        <option valeu="pih">Pihenő</option>
+        <option valeu="taki">Takarítás</option>
+
+    </select>
+    <input type="submit" value="Rendben">
+</form>
+
+</body>
+</html>
