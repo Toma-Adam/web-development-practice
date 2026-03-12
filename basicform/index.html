@@ -20,7 +20,7 @@
         <p>fizetési mód</p>
         <input type="radio" id="r1" name="pay" value="cash">
         <label for="r1">Készpénz</label>
-        <input type="radio" id="r2" name="pay" value="Card"> <!--ugya az a "pay" név kell mert különben kilehet többet is jelölni-->
+        <input type="radio" id="r2" name="pay" value="Card"> <!--ugyan az a "pay" név kell mert különben kilehet többet is jelölni-->
         <label for="r2">Kártya</label>
         <input type="submit" value="regisztrációt"> <!--value az üzenet amit a gombküld a Javanak ha rákattintok.-->
         
@@ -42,7 +42,7 @@
 
 <form class="form-container" action="/t" method="POST">
     <label for="kod_id">Dolgozó</label>
-    <input type="text" id="kod_id" name="u_name" placeholder="ATA">
+    <input type="text" id="kod_id" name="u_name" placeholder="ATA" maxlength="3" minlength="3"> <!--MIN és MAX 3 karakter lehet csak-->
     <label for="jel_id">Jelszó</label>
     <input type="password" name="u_jel">
     <label for="ter">Válassz területet</label>
