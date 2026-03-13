@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    color:blue;
+}
+h2{
+    text-align: center;
+    color: green;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rolam_szoveg{
+    max-width: 600px; /*  Ne nyóljon el a teljes képernyőn, könnyeben olvasható*/
+    line-height: 1.6; /* Kényelmesebb a szemeknek*/
+    font-size: 18px; /* Jól olvasható betűméret*/
+    color: #333; /* Sötétszürke nem fekete*/
+    padding: 20px; /* Szellősebb*/
+    background-color: white; /* Fehér háttér*/
+    border-left: 5px solid #3498; /* Kék csík a balszélen */
+    margin:20px 0; /* Távolság a töbi elemtől*/
+    font-family: sans-serif; /* Modern talpnélküli betűk*/
+}
+.profil_kep{
+    width: 150px;  /* Fix szélesség*/
+    height: 150px; /* Fix magasság ugyan akkora mint a szélesség*/
+    border: 5px solid lime; /* Lime színű keret*/
+    object-fit: cover; /* Ne torzuljon el a kép*/
+    border-radius: 50%; /* Kör alakú kép*/
+    padding: 5px; /* Kis hely a kép és a keret között*/ 
+    display: block; /* Biztosítja hogy ne lógjon ki a keretből*/
+}
+.bemutatkozas_kontener{
+    display: flex; /* Legfontosabb!!!*/
+    align-items: center; /* Függölegesen középre igazítja a képet és a szöveget*/
+    gap: 30; /* Kényelme stávolság a kép és a szöveg között*/
+    max-width: 900px; /* Egész blokk szélessége korlátozva*/
+    margin: 50px auto; /*középre rakja az egészblokkot az oldalon*/
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
