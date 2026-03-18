@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- Dokumentum típusának meghatározás (HTML5)-->
+<html lang="hu"> <!-- Teljes HTML dokumentum kezdete, nyelv Magyar-->
+<head>
+    <meta charset="UTF-8"> <!-- Karakter kódolás ékezetek miatt nagyon fontos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Reszponzív megjelenítés mobilon-->
+    <link rel="stylesheet" href="style.css"> <!-- Külső CSS fájl betöltése-->
+    <title>Honda Accord 7 gen szemantikus gyakorlat</title> <!-- Az oldal címe (Böngésző fülön jelenik meg)-->
+</head>
+<body>
+    <header> <!-- A fejléc része-->
+        <h1>Honda Accord 7.Generáció (2003-2008)</h1> <!-- Főcím-->
+        <nav> <!-- Navigációs menü-->
+            <ul> <!-- A menüpont - oldal adott részére ugrik-->
+                <li>
+                    <a href="#tortenet">Történet</a>
+                    <li><a href="#galeria">Média</a></li>
+                    </li> <li><a href="#specifikacio">Specifikáció</a></li>
+                    </ul>
+                    
+
+        </nav>
+        </header>
+        <main> <!-- Fő tartalom-->
+            <section id="tortenet"> <!-- Történet szekció-->
+            <h2>A Japán Precizitás</h2> <!-- Másodlagos címsor-->
+            <p>Az Accord 7. generációja a mérnöki zsenialitás mintapéldája, főleg a k-szériás motorok miatt,</p> <!-- Bekezdés szöveg-->
+            </section>
+            <section id="galeria"> <!-- Galéria média szekció-->
+                <h2>Média és élmény</h2>
+
+            <div class="video-container"> <!-- Videó konténer CSS-hez hasznos-->
+                <h3>Youtube bemutató</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/skW-gcpyFd8?si=39-gVDGfsCyoWtMu" title="youtube" frameborder="0" allowfullscreen></iframe> <!-- Beágyazott YT videó-->
+            </div>
+            <h3>I-VTEC Hangorkán</h3> <!-- Hangrész-->
+            <audio controls> <!-- Kontrolsz nagyon fontos-->
+            <source src="motor.mp3"> <!-- Hangfájl forrása-->
+            A böngésző nem támogatja a hangfájlt <!-- Ha nem támogatott a hangfájl ez jelenik meg-->
+            </audio>
+            </section>
+            <section id="specifikacio"> <!-- Specifikációs szekció-->
+                <h2>Technikai csemegék</h2>
+                <ul> <!-- Lista-->
+                    <li><strong>Motor:</strong> 2.0 i-VTEC (K20) és 2.4 i-VTEC (K24)</li>
+                    <li><strong>Futómű:</strong> Kettős keresztlengőkaros megoldás</li>
+                    <li><strong>Dizájn:</strong> Éles vonalak, máig modern megjelenés</li>
+                </ul> 
+                <a href="https://hu.wikipedia.org/wiki/Honda_Accord" target="_blank" rel="noopener" class="gomb-link">További adatok</a> <!-- Külső link új fülön-->
+                </section>
+                </main> 
+                <footer> <!-- Lábléc-->
+                    <p>&copy; 2026 honda Accord rajongói Oldal | készítette: Toma Ádám</p>
+                    </footer>
+</body>
+</html>

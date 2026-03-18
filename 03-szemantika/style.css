@@ -1,0 +1,82 @@
+body{
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; /* Betűtípus beállítása (ha az első nincs jön a következő*/
+    background-color: #121212; /* Nagyon sötétszürke majdnem fekete háttér*/
+    color: #e0e0e0; /* Világos szürke betűszín a jól olvashatóságért*/
+    line-height: 1.6; /* Sorköz távolsága hogy ne legyenek zsúfoltak a betűk*/
+    display: flex; /* Rugalmas elrendezés bekapcsolása*/
+    flex-direction: column; /* Az elemek egymás alá kerülnek oszlopos elrendezés*/
+    align-items: center; /* Mindent vízszintesen középre igazít*/
+}
+header{ /* Az oldal frjlécének a stílusa*/
+    background-color: #cc0000; /* Piros háttér szin*/
+    width:100%; /* Teljes szélesség kitöltése*/
+    padding: 20px 0; /* Alsó és felső belső margó térköz*/
+    text-align: center; /* A fejléc szövegét középre zárja*/
+
+}
+nav ul{ /* Navigációs menü listája*/
+    list-style: none; /* Kiveszi a pontozás előle*/
+    display: flex; /* Listaelemeket egymás mellé teszi*/
+    justify-content: center; /* Középre rendezi a menü pontoka*/
+    gap: 20px; /* Távolság (köz) a menüpontok között*/
+    margin-top: 10px; /* Felső külső margó*/
+    
+}
+nav a{ /* Navigációs linkek kinézete*/
+    color: white; /* Fehér szövegszín*/
+    text-decoration: none; /* Aláahúzás eltávolítása*/
+    font-weight: bold; /* Félkövér betűstílus*/
+
+}
+main{ /* Fő tartalom konténere*/
+    max-width: 800px; /* Maximum 800 pixel széles*/
+    width: 90%; /* Kisebb képernyőn a szélesség 90%-át foglalja el*/
+    margin: 30px 0; /* Alsó és felső külső távolság*/
+    background-color: #1e1e1e; /* Kicsit világosabb szürke hattér mint a body-nál*/
+    padding: 30px; /* Belső távolság a tartalom és a doboz széle között*/
+    border-radius: 12px; /* Lekerekített sarkok*/
+}
+section{ /* Egyes szekciók (blokkok( elválasztása*/
+    margin-bottom: 40px; /* Alsó távolság a következő szekciótól*/
+    border-bottom: 1px solid #333; /* Vékony sötétszürke választó vonal az alján*/
+    padding-bottom: 20px; /* Térköz a vonal és a szöveg között*/
+}
+h2{ /* Másodlagos címsorok stílusa*/
+    color: #cc0000; /* Piros szövegszín*/
+    margin-bottom: 15px; /* ALsó távolság a címsor alatt*/
+}
+
+iframe, video{ /* Beágyazott tartalmak (Youtube videó)*/
+    width: 100%; /* Kitölti a rendelkezésre álló szélességet*/
+    border-radius: 10px; /* Lekerekített sarkok a vidónak*/
+    border: 2px solid #cc0000; /* Piros keret a videó körül*/
+}
+
+audio{ /* Audió lejátszó stílusa*/
+    width:100%; /* Teljes szélesség*/
+    margin-top: 10px; /* Felső távolság*/
+}
+
+.gomb-link{ /* Gombként kinéző linkek alapstílusa*/
+   display: inline-block; /* Engedi a méretezést de nem töri meg a sort*/
+   background-color: #cc0000; /* Piros háttér szin*/
+   color: white; /* Fehér szöveg*/
+   padding: 10px 25px; /* Belső térköz*/
+   text-decoration: none; /* Aláhúzás levétele*/
+   border-radius: 5px; /* Enyhén lekerekített sarkok*/
+   font-weight: bold; /* Félkövér szöveg*/
+   transition: 0.3S; /* Animáció hossza, amikor raviszem az egeret*/
+}
+.gomb-link:hover{ /* Gombstílusa ha rámutatok az egérrel*/
+    background-color: #ff0000; /* Világosbb piros lesz*/
+    transform: scale(1.05); /* Kicsit megnő a gomb mérete*/
+}
+
+footer{ /* Az oldal lábléce*/
+    width: 100%; /* Teljes szélesség*/
+    background-color: #000; /* Teljesen fekete háttér*/
+    padding: 20px; /* Belső térköz*/
+    text-align: center; /* Teljesen középre zárt szöveg*/
+    font-size: 14px; /* Kicsit kisebb betűméret*/
+    color: #555; /* Sötétszürke szöveg (kevésbé feltűnő)*/
+}
